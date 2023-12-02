@@ -4,7 +4,10 @@ body{
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* header{
+   
+    /* z-index: 100; */
+/* } */ 
 nav{
     display: flex;
     flex-direction: row;
@@ -12,7 +15,9 @@ nav{
     align-items: center;
     width: 100%;
     background-color: #242526;
-   
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .left-nav img{
@@ -91,48 +96,77 @@ nav{
     background-color: #242526;
     
 }
-.leftSideBar, .rightSideBar{
+
+.leftSideBar .rightSideBar{
     flex-basis: 25%;
-    border: 1px solid black;
+    border: 1px solid rgb(7, 78, 78);
     height: 100vh;
     font-size: 15px;
-    line-height: 50px;
+    align-self: flex-start;
+   
 }
+ .leftSidebarLinks{  /*fixed left aside bar */
+    position: sticky;
+    top: 0.5px;
+}
+
 .mainContent{
     border: 1px solid red;
     height: 100vh;
     flex-basis: 47%;
 }
-.leftSideBar ul li, .rightSideBar ul li{
-    list-style: none;
+.leftSidebarLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    
+}
+.leftSidebarLinks a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    
+}
+.leftSidebarLinks a i , .leftSidebarLinks a img{
+    margin-right: 10px;
     cursor: pointer;
 
-
 }
-.leftSideBar ul li img{
+.leftSidebarLinks a img{
     border-radius: 100%;
     position: relative;
+    top: 5px;
 }
-.leftSideBar ul li span{
-    margin-left: 10px;
+.leftSidebarLinks a:hover{
+    background-color: #7d7e80;
+    border-radius: 30px;
+}
+.leftbottom{
+    font-size: 11px;
+    color: #b1b3b7;
+}
+/* Right side bar */
+.rightSideBarAdd1, .rightSideBarAdd2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+   
+}
+
+h4{
     color: white;
-    position: absolute;
 }
-.leftSideBar ul{
-    padding-left: 10px;
-}
-.leftSideBar ul li:hover, .rightSideBar ul li:hover{
-    background-color: #73767c;
-    border-radius: 10px;
-}
-.sidebar_image{
-    height: 52px;
-    padding-left: 5px;
-}
-.leftSideBar ul li i{
-    padding-left: 5px;
-}
-.separation{
-    border: 2px solid grey;
-    width: 100%;
+.rightSideBarAdd1 :nth-child(2), .rightSideBarAdd2 :nth-child(2){
+    color: white;
+    padding-right: 25px;   /* important */
 }
