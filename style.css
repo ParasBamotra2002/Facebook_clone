@@ -3,25 +3,28 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #242526;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
 }
-/* header{
-   
-    /* z-index: 100; */
-/* } */ 
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: #242526;
-    position: sticky;
+    /* width: 100%; */
+    background-color:#242526;;
+    position: sticky;                      /* #242526; */
     top: 0;
     z-index: 100;
+    padding: 5px 5px;
+    
 }
 
 .left-nav img{
-    margin-right: 5px;
+    /* margin-right: 5px; */
     width: 40px;
 }
 
@@ -30,7 +33,8 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    gap: 5px;
+
 } 
 .search_box{
     display: flex;
@@ -87,7 +91,84 @@ nav{
     border: 3px solid white;
 
 }
+/* --------------------------center content------------------------------- */
 .container{
+    display: flex;
+    align-items: start;
+    padding: 13px 5%;
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid salmon;
+    height: 100vh;
+}
+.leftsidebar, .rightsidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 60px;
+    align-self: flex-start;
+}
+.maincontent{
+    
+    flex-basis: 47%;
+    border: 1px solid green;
+}
+/* --------------------left side bar----------------- */
+.leftSidebarLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    
+}
+.leftSidebarLinks a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    
+}
+.leftSidebarLinks a i , .leftSidebarLinks a img{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.leftSidebarLinks a img{
+    border-radius: 100%;
+    position: relative;
+    top: 5px;
+}
+.leftSidebarLinks a:hover{
+    background-color: #7d7e80;
+    border-radius: 30px;
+}
+.leftbottom{
+    font-size: 11px;
+    color: #b1b3b7;
+}
+/* ---------------------right side bar------------------ */
+.rightSideBarAdd1, .rightSideBarAdd2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+   
+}
+
+h4{
+    color: white;
+}
+.rightSideBarAdd1 :nth-child(2), .rightSideBarAdd2 :nth-child(2){
+    color: white;
+    padding-right: 25px;  
+}
+/* .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,19 +176,23 @@ nav{
     width: 100%;
     background-color: #242526;
     
+
+    
+    
 }
 
-.leftSideBar .rightSideBar{
+.leftSideBar, .rightSideBar{
     flex-basis: 25%;
-    border: 1px solid rgb(7, 78, 78);
+    border: 1px solid rgb(8, 235, 235);
     height: 100vh;
     font-size: 15px;
     align-self: flex-start;
    
 }
- .leftSidebarLinks{  /*fixed left aside bar */
+ .leftSideBar{  
     position: sticky;
-    top: 0.5px;
+    top: 53px;
+    background-color: bisque;
 }
 
 .mainContent{
@@ -152,7 +237,7 @@ nav{
     font-size: 11px;
     color: #b1b3b7;
 }
-/* Right side bar */
+
 .rightSideBarAdd1, .rightSideBarAdd2{
     display: flex;
     flex-direction: row;
@@ -168,5 +253,5 @@ h4{
 }
 .rightSideBarAdd1 :nth-child(2), .rightSideBarAdd2 :nth-child(2){
     color: white;
-    padding-right: 25px;   /* important */
-}
+    padding-right: 25px;  
+} */
