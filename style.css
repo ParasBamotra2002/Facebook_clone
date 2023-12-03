@@ -168,90 +168,48 @@ h4{
     color: white;
     padding-right: 25px;  
 }
-/* .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 15px; 
-    width: 100%;
-    background-color: #242526;
-    
-
-    
-    
-}
-
-.leftSideBar, .rightSideBar{
-    flex-basis: 25%;
-    border: 1px solid rgb(8, 235, 235);
-    height: 100vh;
-    font-size: 15px;
-    align-self: flex-start;
-   
-}
- .leftSideBar{  
-    position: sticky;
-    top: 53px;
-    background-color: bisque;
-}
-
-.mainContent{
-    border: 1px solid red;
-    height: 100vh;
-    flex-basis: 47%;
-}
-.leftSidebarLinks{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    
-}
-.leftSidebarLinks a{
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    padding-left: 10px;
-    width: 100%;
-    padding-top: 10px;
+.rightSideBarAdd2{
     padding-bottom: 10px;
-  
-    
+    border-bottom: 1px solid gray;
 }
-.leftSidebarLinks a i , .leftSidebarLinks a img{
-    margin-right: 10px;
-    cursor: pointer;
-
+/* --------contacts right sidebar-------------- */
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.leftSidebarLinks a img{
-    border-radius: 100%;
-    position: relative;
-    top: 5px;
+.contacts h3{
+    color: white;
 }
-.leftSidebarLinks a:hover{
-    background-color: #7d7e80;
-    border-radius: 30px;
+#glass{
+    margin-right: 16px;
 }
-.leftbottom{
-    font-size: 11px;
-    color: #b1b3b7;
-}
-
-.rightSideBarAdd1, .rightSideBarAdd2{
+/* ----------------contacts------------------- */
+.contact1, .contact2, .contact3, .contact4, .contact5{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 5px;
-    margin-bottom: 10px;
-   
 }
+.contact1 p, .contact2 p, .contact3 p, .contact4 p, .contact5 p{
+    font-size: 17px;
+    color: white;
+    margin-left: 10px;
+}
+.contact1 img, .contact2 img, .contact3 img, .contact4 img, .contact5 img{
+    border-radius: 100%;
+}
+.online1{
+    position: relative;
+}
+.online1::after{
+    content: " ";
+    background-color: green;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 13px;
+    left: 22px;
 
-h4{
-    color: white;
 }
-.rightSideBarAdd1 :nth-child(2), .rightSideBarAdd2 :nth-child(2){
-    color: white;
-    padding-right: 25px;  
-} */
