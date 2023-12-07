@@ -1,3 +1,8 @@
+:root{
+    --box-width:130px;
+    --box-height:220px;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -212,4 +217,94 @@ h4{
     bottom: 13px;
     left: 22px;
 
+}
+/* --------------------------------------main content---------------------------- */
+.story_gallery{
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.story1{
+    width:var(--box-width);
+    height:var(--box-height);
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.44)) ,url(images/profile_pic.jpeg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.story2{
+    width:var(--box-width);
+    height:var(--box-height);
+    background-image:  linear-gradient(transparent, rgba(0,0,0,0.44)) ,url(images/contactsimg5.jpeg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+#add_story1para, #add_story1, #story2img{
+    position:absolute;
+}
+#story2img{
+    border-radius: 100%;
+    background-color: #0866ff;
+    padding: 3px;
+}
+#add_story1{
+    bottom: 50px;
+    left: 40%;
+    z-index: 100;
+    
+}
+#add_story1para{
+    width: 100%;
+    bottom: 5px;
+    left: 25%;
+    color: white;
+    font-weight: 400;
+    
+}
+.post{
+    border: 1px solid red;
+}
+.feed img{
+    border-radius: 100%;
+    
+}
+.feed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.feed :nth-child(2){
+    flex-basis: 93%;
+}
+.feed input{
+  width: 95%;
+  border-radius: 20px;
+  padding: 9px;
+}
+.separation{
+    border: 1px solid grey;
+}
+.post_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.post_images p{
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    margin-left: 5px;
 }
