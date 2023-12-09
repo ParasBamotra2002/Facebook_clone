@@ -44,7 +44,7 @@ nav{
 .search_box{
     display: flex;
     align-items: center;
-    width: 230px;
+    width: 100%;
     background-color: #3a3b3c;
     padding: 10px 12px;
     border-radius: 100px;
@@ -105,6 +105,7 @@ nav{
     justify-content: space-between;
     border: 1px solid salmon;
     height: 100vh;
+    
 }
 .leftsidebar, .rightsidebar{
     flex-basis: 25%;
@@ -308,3 +309,180 @@ h4{
     color: white;
     margin-left: 5px;
 }
+@media only screen and (max-width:1170px){
+    /* .container{
+        padding:13px 0px ;
+    } */
+    .story1, .story2{
+        --box-width:90px;
+        --box-height:150px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+    .story2 img{
+        width: 30px;
+    }
+}
+@media only screen and (max-width:1036px){
+    .right-nav ul li{
+        padding:0px 20px;
+    }
+}
+@media only screen and (max-width:976px){
+    .main-nav li{
+        padding: 0px 20px;
+    }
+    .container{
+        padding: 13px 5px;
+    }
+ 
+}
+@media only screen and (max-width:667px){
+    .right-nav ul li{
+        display: none;
+    }
+    .left-nav img{
+        width: 30px;
+    }
+    .search_box{
+        width: 15px;
+    }
+    .right-nav img{
+        width:30px
+    }
+    .rightsidebar{
+        display: none;
+    }
+    .maincontent{
+        flex-basis: 100%;
+    }
+    .container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .story_gallery{
+        padding: 2px 15px;
+    }
+    .feed img{
+        width: 30px;
+    }
+}
+@media only screen and (max-width:640px){
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media only screen and (max-width:478px){
+    .main-nav ul li{
+        padding: 0px 10px;
+    }
+   
+}
+@media only screen and (max-width:368px){
+    .main-nav ul li:first-child{
+        display: none;
+    }
+   
+}
+@media only screen and (max-width:863px) {
+    .leftsidebar{
+        display: none;
+    }
+    .rightsidebar{
+        flex-basis: 36%;
+    }
+
+}
+@media only screen and (max-width:710px){
+    .rightSideBarAdd1 img, .rightSideBarAdd2 img{
+        width: 72px;
+    }
+}
+@media only screen and (max-width:565px){
+    .story_gallery{
+        justify-content: space-between;
+        padding: 2px 20px;
+    }
+    .story1, .story2{
+        --box-width:90px;
+        --box-height:120px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+    .container{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .post{
+        width: 100%;
+    }
+    .post_images{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .feed{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .feed input{
+        width: auto;
+    }
+}
+@media only screen and (max-width:528px){
+    .story_gallery{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px;
+    }
+    .story1, .story2{
+        --box-width:79px;
+        --box-height:117px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+}
+@media only screen and (max-width:448px){
+    .story_gallery{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px;
+    }
+    .story1, .story2{
+        --box-width:71px;
+        --box-height:110px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+}
+@media only screen and (max-width:448px){
+    .story_gallery{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px;
+    }
+    .story1, .story2{
+        --box-width:71px;
+        --box-height:110px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+}
+@media only screen and (max-width:418px){
+    .story_gallery{
+        justify-content: center;
+        align-items: center;
+        padding: 2px 5px;
+    }
+    .story1, .story2{
+        --box-width:61px;
+        --box-height:100px;
+        width:var(--box-width);
+        height:var(--box-height);
+    }
+}
+
+
+
