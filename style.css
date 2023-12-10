@@ -103,7 +103,7 @@ nav{
     padding: 13px 5%;
     gap: 10px;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     height: 100vh;
     
 }
@@ -116,7 +116,7 @@ nav{
 .maincontent{
     
     flex-basis: 47%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 /* --------------------left side bar----------------- */
 .leftSidebarLinks{
@@ -249,7 +249,7 @@ h4{
     border-radius: 10px;
     position: relative;
 }
-#add_story1para, #add_story1, #story2img{
+#add_story1para, #add_story1, #story2img, .addstory2_para{
     position:absolute;
 }
 #story2img{
@@ -260,10 +260,11 @@ h4{
 #add_story1{
     bottom: 50px;
     left: 40%;
-    z-index: 100;
+    /* z-index: 100; */
+    
     
 }
-#add_story1para{
+#add_story1para, .addstory2_para{
     width: 100%;
     bottom: 5px;
     left: 25%;
@@ -271,8 +272,9 @@ h4{
     font-weight: 400;
     
 }
+
 .post{
-    border: 1px solid red;
+    border: 1px solid rgb(54, 53, 53);
 }
 .feed img{
     border-radius: 100%;
@@ -320,6 +322,15 @@ h4{
         height:var(--box-height);
     }
     .story2 img{
+        width: 30px;
+    }
+    .story1 i{
+        display:none;
+    }
+    #add_story1para, .addstory2_para{
+        font-size: 12px;
+    }
+    #story2img{
         width: 30px;
     }
 }
@@ -377,6 +388,9 @@ h4{
     .main-nav ul li{
         padding: 0px 10px;
     }
+    #story2img{
+        width: 20px;
+    }
    
 }
 @media only screen and (max-width:368px){
@@ -426,9 +440,19 @@ h4{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 5px 40px;
     }
-    .feed input{
+    .post_images{
+        padding: 2px 40px;
+    }
+    /* .feed input{
         width: auto;
+    } */
+    .post_images p{
+        font-size: 13px;
+    }
+    .post_images img{
+        width: 18px;
     }
 }
 @media only screen and (max-width:528px){
@@ -444,19 +468,7 @@ h4{
         height:var(--box-height);
     }
 }
-@media only screen and (max-width:448px){
-    .story_gallery{
-        justify-content: center;
-        align-items: center;
-        padding: 2px 5px;
-    }
-    .story1, .story2{
-        --box-width:71px;
-        --box-height:110px;
-        width:var(--box-width);
-        height:var(--box-height);
-    }
-}
+
 @media only screen and (max-width:448px){
     .story_gallery{
         justify-content: center;
