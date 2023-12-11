@@ -112,6 +112,7 @@ nav{
     position: sticky;
     top: 60px;
     align-self: flex-start;
+
 }
 .maincontent{
     
@@ -311,6 +312,42 @@ h4{
     color: white;
     margin-left: 5px;
 }
+/* ---------------------------------posts---------------------------------------- */
+.postimages1{
+  
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.toppart{
+   
+    position:relative ;
+}
+.toppart img{
+    border-radius: 100%;
+
+}
+.toppart p{
+    font-size: 17px;
+    color: white;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+}
+.toppart i{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.postimages1 :nth-child(2){
+    color: white;
+    margin-bottom: 10px;
+}
+.logosbottom{
+    display:flex ;
+    align-items:center ;
+    justify-content: space-between;
+}
 @media only screen and (max-width:1170px){
     /* .container{
         padding:13px 0px ;
@@ -493,6 +530,10 @@ h4{
         --box-height:100px;
         width:var(--box-width);
         height:var(--box-height);
+    }
+    
+    #add_story1para{
+        left: 10%;
     }
 }
 
